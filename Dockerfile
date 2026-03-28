@@ -5,7 +5,7 @@ FROM python:3.13.8-slim
 WORKDIR /app
 
 #3: Install Data Science libraries, more can be added in later as this project progresses.
-RUN pip install --no-cache-dir pandas numpy matplotlib scikit-learn seaborn jupyterlab duckdb
+RUN pip install --no-cache-dir pandas numpy matplotlib scikit-learn seaborn jupyterlab duckdb scipy
 
 # Update the package list and install git
 RUN apt-get update && apt-get install -y git
